@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor Chianese">
+    <meta name="description" content="Week 6 Pay Calculator">
+    <title>W6 Javascript Pay Calculator</title>
+</head>
+<body>
+    <script>
+        var hourlyRate = prompt("What is the hourly pay: ")
+        var hoursWorked = prompt("What is the amount of hours worked: ")
+        var tax = .2
+        
+        var payNum = Number(hourlyRate)
+        var workedNum = Number(hoursWorked)
+
+
+        var grossPay = (payNum * workedNum).toFixed(2);
+        var uncleSam = (grossPay * tax).toFixed(2);
+        var netPay = (grossPay - uncleSam).toFixed(2);
+
+
+        alert("The outputs are in the console. Hit f12 and go over to the console.")
+        console.log("The gross pay is $" + grossPay)
+        console.log("Good ol' Uncle Sam's share $" + uncleSam)
+        console.log("The net pay is $" + netPay)
+
+
+
+    </script>
+</body>
+</html>
